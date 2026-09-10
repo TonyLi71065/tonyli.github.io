@@ -1,0 +1,143 @@
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(20, 20, 20);
+  color: lightgray;
+}
+
+/****************   Nav Section **********************/
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: rgb(10, 0, 60);
+}
+
+header h1 {
+  color: lightblue;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+}
+
+header img {
+  border-radius: 10%;
+}
+
+.address {
+  font-family: "Inter", sans-serif;
+}
+
+.tagline {
+  font-family: "Inter", sans-serif;
+}
+
+/************* Sections ********************/
+hr {
+  
+}
+
+section h2 {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  color: white;
+}
+
+section h3 {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+section ul {
+  list-style-type: circle;
+}
+
+section a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: white;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 20rem;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .three-col {
+      grid-template-columns: 1fr;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+input {
+  width: 30rem;
+}
+
+textarea {
+  width: 30rem;
+}
